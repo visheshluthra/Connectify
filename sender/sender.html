@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../style.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body background = "../Images/sender_background.jpg">
+        <h1 align = "center">Connectify</h1>
+        <div id = "create">
+            <input placeholder = "Enter Room ID" type = "text" id = "username-input" />
+            <button id = "send_button" onclick = "sendUsername()"><img src = "../Images/send_icon.png" width = "100" height = "100"></button><br>
+            <button id = "start_call_button" onclick = "startCall()"><img src = "../Images/start_call_icon.png" width = "100" height = "100"></button>
+        </div>
+        <div id = "video-call-div">
+            <video muted id = "local-video" autoplay></video>
+            <video id = "remote-video" autoplay></video>
+            <div class = "call-action-div">
+                <button id = "video" onclick = "muteVideo()"><img id = "video_img" src = "../Images/video_unmuted.png" width = "60" height = "60"></button>
+                <button id = "audio" onclick = "muteAudio()"><img id = "audio_img" src = "../Images/mic_unmuted.png" width = "60" height = "60"></button>
+                <button id = "hideChatBox" onclick = "hideChatBox()"><img id = "chat_img" src = "../Images/chat_hide.png" width = "60" height = "60"></button>
+                <button id = "endCall" onclick = "endCall()"><img id = "endCall_img" src = "../Images/end_call.png" width = "60" height = "60"></button>
+            </div>
+        </div>
+        <div id = "chatbox">
+            <iframe id = "videoPlayer" src = "" width = "200" height = "200" style = "border: none;"></iframe>
+            <iframe id = "displayChat" src = "../index.php" width = "400" height = "300"></iframe>
+            <input id = "inputArea" type = "text" name = "input" size = "40">
+            <button id = "sendMessage"><img id = "sendMessage_img" src = "../Images/send_message_icon.png" width = "30" height = "30"></button>
+        </div>
+        <script src = "sender.js"></script>
+    </body>
+</html>
