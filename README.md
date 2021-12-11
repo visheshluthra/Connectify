@@ -14,3 +14,6 @@ that they desire.
 => jQuery
 => JavaScript
 => PHP
+# Pre- requisetes:
+Install node.js and make sure you have all the node modules in the same directory and also package.json file is also created.
+See to the fact that you have all the above mentioned technologies, installed on you local machine.
