@@ -8,7 +8,7 @@ assistance to the users. For example, the application contains a music bot that 
 control and play music. The user just has to call the bot in the chat box using a 
 command along with the name of the song they wish to play to listen to or the music 
 that they desire.
-The technologies used are:
+# The technologies used are:
 => HTML
 => CSS
 => jQuery
